@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.board{
+    margin: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    width:480px;
+    height:480px;
+}
+
+.tile{
+    height:30px;
+    width:30px;
+    border: 1px solid black;
+    background-color:white;
+    box-sizing:border-box;
+}
