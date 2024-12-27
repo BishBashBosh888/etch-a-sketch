@@ -12,24 +12,35 @@
         <h1 class="title"> ETCH-A-SKETCH</h1>
         <div class="container">
             <div class="side-menu">
+                <!-- board dimension options -->
                 <div class="dimensions">
                     <h2 class="label">Board Dimension</h2>
-                    <button class="dimension" onclick="generateTiles(8)" id="smallest">8x8</button>
-                    <button class="dimension" onclick="generateTiles(16)" id="small">16x16</button>
-                    <button class="dimension" onclick="generateTiles(32)" id="medium">32x32</button>
-                    <button class="dimension" onclick="generateTiles(64)" id="large">64x64</button>
+                    <div class="button-wrapper">
+                        <button class="dimension" onclick="generateTiles(8)" id="smallest">8x8</button>
+                        <button class="dimension" onclick="generateTiles(16)" id="small">16x16</button>
+                        <button class="dimension" onclick="generateTiles(32)" id="medium">32x32</button>
+                        <button class="dimension" onclick="generateTiles(64)" id="large">64x64</button>
+                    </div>
                 </div>
+
+                <!-- color options -->
                 <div class="colors">
                     <h2 class="label">Color</h2>
-                    <button class="color-option" data-color="red" style="background-color: red;"></button>
-                    <button class="color-option" data-color="blue" style="background-color: blue;"></button>
-                    <button class="color-option" data-color="green" style="background-color: green;"></button>
-                    <button class="color-option" data-color="yellow" style="background-color: yellow;"></button>
-                    <button class="color-option" data-color="purple" style="background-color: purple;"></button>
+                    <div class="button-wrapper">
+                        <button class="color-option" data-color="red" style="background-color: red;"></button>
+                        <button class="color-option" data-color="blue" style="background-color: blue;"></button>
+                        <button class="color-option" data-color="green" style="background-color: green;"></button>
+                        <button class="color-option" data-color="yellow" style="background-color: yellow;"></button>
+                        <button class="color-option" data-color="purple" style="background-color: purple;"></button>
+                    </div>
                     <input type="color" id="customColor" title="Pick a custom color">
                 </div>
+
+                <!-- reset board button -->
                 <div class="reset">
-                    <button onclick="clearBoard()"><i class="fa-solid fa-trash"></i></button>
+                    <div class="button-wrapper">
+                        <button onclick="clearBoard()"><i class="fa-solid fa-trash"></i></button>
+                    </div>
                 </div>
             </div>
 
